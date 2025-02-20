@@ -17,3 +17,62 @@ Add a card to your account here: https://dashboard.ngrok.com/settings#id-verific
 ### Further help
 
 If you're having trouble resolving this error, please reach out to [support@ngrok.com](mailto:support@ngrok.com?subject=Help%20with%20ERR_NGROK_8013)
+2020-08-12T22:21:55.5243116Z ##[group]Run install.packages('remotes')
+2020-08-12T22:21:55.5243360Z [36;1minstall.packages('remotes')[0m
+2020-08-12T22:21:55.5243487Z [36;1msaveRDS(remotes::dev_package_deps(dependencies = TRUE), "../.github/depends.Rds", version = 2)[0m
+2020-08-12T22:21:55.5243834Z [36;1mwriteLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), "../.github/R-version")[0m
+2020-08-12T22:21:55.5250702Z shell: /usr/local/bin/Rscript {0}
+2020-08-12T22:21:55.5251247Z env:
+2020-08-12T22:21:55.5251370Z   R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+2020-08-12T22:21:55.5251571Z   RSPM: https://packagemanager.rstudio.com/cran/__linux__/focal/latest
+2020-08-12T22:21:55.5251726Z   R_LIBS_USER: /home/runner/work/_temp/Library
+2020-08-12T22:21:55.5251838Z   TZ: UTC
+2020-08-12T22:21:55.5251944Z   NOT_CRAN: true
+2020-08-12T22:21:55.5252036Z ##[endgroup]
+2020-08-12T22:21:55.7245517Z Installing package into ‘/home/runner/work/_temp/Library’
+2020-08-12T22:21:55.7246358Z (as ‘lib’ is unspecified)
+2020-08-12T22:22:10.8252493Z trying URL 'https://packagemanager.rstudio.com/cran/__linux__/focal/latest/src/contrib/remotes_2.2.0.tar.gz'
+2020-08-12T22:22:11.4785067Z Content type 'binary/octet-stream' length 385906 bytes (376 KB)
+2020-08-12T22:22:11.4972702Z ==================================================
+2020-08-12T22:22:11.4973457Z downloaded 376 KB
+2020-08-12T22:22:11.4973749Z 
+2020-08-12T22:22:11.7705424Z * installing *binary* package ‘remotes’ ...
+2020-08-12T22:22:11.7751638Z * DONE (remotes)
+2020-08-12T22:22:11.7952384Z 
+2020-08-12T22:22:11.7953131Z The downloaded source packages are in
+2020-08-12T22:22:11.7954176Z    ‘/tmp/RtmpnMfdtp/downloaded_packages’
+2020-08-12T22:22:28.2516191Z ##[group]Run actions/cache@v1
+2020-08-12T22:22:28.2516310Z with:
+2020-08-12T22:22:28.2516416Z   path: /home/runner/work/_temp/Library
+2020-08-12T22:22:28.2516545Z   key: Linux-287c850eb370edd647ed85b6fac18cbaee02effa7d01b981304dce84a452b22c-1-
+2020-08-12T22:22:28.2516663Z   restore-keys: Linux--1-
+2020-08-12T22:22:28.2516765Z env:
+2020-08-12T22:22:28.2516865Z   R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+2020-08-12T22:22:28.2517041Z   RSPM: https://packagemanager.rstudio.com/cran/__linux__/focal/latest
+2020-08-12T22:22:28.2517180Z   R_LIBS_USER: /home/runner/work/_temp/Library
+2020-08-12T22:22:28.2517288Z   TZ: UTC
+2020-08-12T22:22:28.2517383Z   NOT_CRAN: true
+2020-08-12T22:22:28.2517481Z ##[endgroup]
+2020-08-12T22:22:28.3670558Z Cache not found for input keys: Linux-287c850eb370edd647ed85b6fac18cbaee02effa7d01b981304dce84a452b22c-1-, Linux--1-.
+2020-08-12T22:22:28.3750527Z ##[group]Run while read -r cmd
+2020-08-12T22:22:28.3750930Z [36;1mwhile read -r cmd[0m
+2020-08-12T22:22:28.3751045Z [36;1mdo[0m
+2020-08-12T22:22:28.3751155Z [36;1m  eval sudo $cmd[0m
+2020-08-12T22:22:28.3751285Z [36;1mdone < <(Rscript -e 'cat(remotes::system_requirements("ubuntu", "20.04"), sep = "\n")')[0m
+2020-08-12T22:22:28.3792540Z shell: /usr/bin/bash -e {0}
+2020-08-12T22:22:28.3792673Z env:
+2020-08-12T22:22:28.3792794Z   R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+2020-08-12T22:22:28.3792990Z   RSPM: https://packagemanager.rstudio.com/cran/__linux__/focal/latest
+2020-08-12T22:22:28.3793151Z   R_LIBS_USER: /home/runner/work/_temp/Library
+2020-08-12T22:22:28.3793268Z   TZ: UTC
+2020-08-12T22:22:28.3793377Z   NOT_CRAN: true
+2020-08-12T22:22:28.3793480Z ##[endgroup]
+2020-08-12T22:22:29.0943838Z usage: sudo -h | -K | -k | -V
+2020-08-12T22:22:29.0944936Z usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+2020-08-12T22:22:29.0945856Z usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+2020-08-12T22:22:29.0946223Z             [command]
+2020-08-12T22:22:29.0947040Z usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+2020-08-12T22:22:29.0947710Z             prompt] [-T timeout] [-u user] [VAR=value] [-i|-s] [<command>]
+2020-08-12T22:22:29.0948381Z usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+2020-08-12T22:22:29.0948992Z             prompt] [-T timeout] [-u user] file ...
+2020-08-12T22:22:29.0956330Z ##[error]Process completed with exit code 1.
